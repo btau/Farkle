@@ -15,6 +15,8 @@
 		0D9F95611C51721A000C5E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9F955F1C51721A000C5E53 /* LaunchScreen.storyboard */; };
 		0D9F956C1C51721A000C5E53 /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F956B1C51721A000C5E53 /* FarkleTests.m */; };
 		0D9F95771C51721A000C5E53 /* FarkleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F95761C51721A000C5E53 /* FarkleUITests.m */; };
+		0D9F95861C51731C000C5E53 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F95851C51731C000C5E53 /* DieLabel.m */; };
+		0D9F95891C5185E6000C5E53 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F95881C5185E6000C5E53 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0D9F95721C51721A000C5E53 /* FarkleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarkleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9F95761C51721A000C5E53 /* FarkleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleUITests.m; sourceTree = "<group>"; };
 		0D9F95781C51721A000C5E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D9F95841C51731C000C5E53 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DieLabel.h; path = ../DieLabel.h; sourceTree = "<group>"; };
+		0D9F95851C51731C000C5E53 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DieLabel.m; path = ../DieLabel.m; sourceTree = "<group>"; };
+		0D9F95871C5185E6000C5E53 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		0D9F95881C5185E6000C5E53 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,11 @@
 				0D9F95551C51721A000C5E53 /* AppDelegate.m */,
 				0D9F95571C51721A000C5E53 /* ViewController.h */,
 				0D9F95581C51721A000C5E53 /* ViewController.m */,
+				0D9F95871C5185E6000C5E53 /* Player.h */,
+				0D9F95881C5185E6000C5E53 /* Player.m */,
 				0D9F955A1C51721A000C5E53 /* Main.storyboard */,
+				0D9F95841C51731C000C5E53 /* DieLabel.h */,
+				0D9F95851C51731C000C5E53 /* DieLabel.m */,
 				0D9F955D1C51721A000C5E53 /* Assets.xcassets */,
 				0D9F955F1C51721A000C5E53 /* LaunchScreen.storyboard */,
 				0D9F95621C51721A000C5E53 /* Info.plist */,
@@ -276,6 +286,8 @@
 				0D9F95591C51721A000C5E53 /* ViewController.m in Sources */,
 				0D9F95561C51721A000C5E53 /* AppDelegate.m in Sources */,
 				0D9F95531C51721A000C5E53 /* main.m in Sources */,
+				0D9F95861C51731C000C5E53 /* DieLabel.m in Sources */,
+				0D9F95891C5185E6000C5E53 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
