@@ -39,7 +39,9 @@
 
 -(void)tapHandler:(UITapGestureRecognizer *)gestureRecognizer
 {
-
+    [self.delegate dieLabel:self tappedDie:gestureRecognizer];
+    
+    NSLog(@"tapped");
 }
 
 

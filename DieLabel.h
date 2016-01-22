@@ -10,7 +10,7 @@
 
 @protocol DieLabelDelegate <NSObject>
 
--(void)tapHandler:(UITapGestureRecognizer *)gestureRecognizer;
+-(void)dieLabel:(id)label tappedDie:(UITapGestureRecognizer *)gestureRecoginzer;
 
 @end
 

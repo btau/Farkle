@@ -21,7 +21,7 @@
 
 
 @property NSMutableArray *numberOfDie;
-@property NSMutableArray *dice;
+//@property NSMutableArray *dice;
 
 @end
 
@@ -31,17 +31,20 @@
 {
     [super viewDidLoad];
 
+    
     self.numberOfDie = [[NSMutableArray alloc]initWithObjects:self.dieLabelOne, self.dieLabelTwo, self.dieLabelThree, self.dieLabelFour, self.dieLabelFive, self.dieLabelSix, nil];
     
 }
 
 
-
--(void)tapHandler:(UITapGestureRecognizer *)gestureRecognizer
+-(void)dieLabel:(id)label tappedDie:(UITapGestureRecognizer *)gestureRecoginzer
 {
-    for (DieLabel *die in self.numberOfDie) {
-        die.delegate = self;
-    }
+
+    self.dieLabelSix.backgroundColor = [UIColor greenColor];
+    [self.numberOfDie removeObjectAtIndex:5];
+//    self.dieLabelSix.userInteractionEnabled = NO;
+    
+    
 }
 
 
@@ -51,6 +54,8 @@
     for (DieLabel *die in self.numberOfDie)
     {
         [die rollDie];
+        die.delegate = self;
+        
     }
     NSLog(@"1 is %@", self.dieLabelOne.text);
     NSLog(@"2 is %@", self.dieLabelTwo.text);
