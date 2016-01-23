@@ -10,4 +10,15 @@
 
 @implementation Player
 
+-(instancetype)initWithName:(NSString *)playerName andTotalScore:(NSInteger)totalScore andWithTurnScore:(NSInteger)turnScore {
+    self = [super init];
+    
+    if (self) {
+        self.playerName = playerName;
+        self.totalScore = totalScore;
+        self.turnScore = turnScore;
+    }
+    return self;
+}
+
 @end

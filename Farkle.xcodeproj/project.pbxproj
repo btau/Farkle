@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2873E51C543927000665A4 /* GameSetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2873E41C543927000665A4 /* GameSetUpViewController.m */; };
 		0D9F95531C51721A000C5E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F95521C51721A000C5E53 /* main.m */; };
 		0D9F95561C51721A000C5E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F95551C51721A000C5E53 /* AppDelegate.m */; };
 		0D9F95591C51721A000C5E53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F95581C51721A000C5E53 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2873E31C543927000665A4 /* GameSetUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSetUpViewController.h; sourceTree = "<group>"; };
+		0D2873E41C543927000665A4 /* GameSetUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSetUpViewController.m; sourceTree = "<group>"; };
 		0D9F954E1C51721A000C5E53 /* Farkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9F95521C51721A000C5E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D9F95541C51721A000C5E53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 			children = (
 				0D9F95541C51721A000C5E53 /* AppDelegate.h */,
 				0D9F95551C51721A000C5E53 /* AppDelegate.m */,
+				0D2873E31C543927000665A4 /* GameSetUpViewController.h */,
+				0D2873E41C543927000665A4 /* GameSetUpViewController.m */,
 				0D9F95571C51721A000C5E53 /* ViewController.h */,
 				0D9F95581C51721A000C5E53 /* ViewController.m */,
 				0D9F955A1C51721A000C5E53 /* Main.storyboard */,
@@ -283,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2873E51C543927000665A4 /* GameSetUpViewController.m in Sources */,
 				0D9F95591C51721A000C5E53 /* ViewController.m in Sources */,
 				0D9F95561C51721A000C5E53 /* AppDelegate.m in Sources */,
 				0D9F95531C51721A000C5E53 /* main.m in Sources */,

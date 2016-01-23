@@ -14,4 +14,6 @@
 @property NSInteger totalScore;
 @property NSInteger turnScore;
 
+-(instancetype)initWithName:(NSString *)playerName andTotalScore:(NSInteger)totalScore andWithTurnScore:(NSInteger)turnScore;
+
 @end
