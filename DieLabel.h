@@ -10,13 +10,15 @@
 
 @protocol DieLabelDelegate <NSObject>
 
--(void)dieLabel:(id)label tappedDie:(UITapGestureRecognizer *)gestureRecoginzer;
+-(void)dieLabel:(UILabel *)dieLabel;
 
 @end
 
 @interface DieLabel : UILabel
 
 @property (nonatomic, assign) id <DieLabelDelegate> delegate;
+
+@property NSString *name;
 
 -(void)rollDie;
 

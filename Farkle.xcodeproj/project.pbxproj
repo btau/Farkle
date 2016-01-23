@@ -111,9 +111,9 @@
 				0D9F95551C51721A000C5E53 /* AppDelegate.m */,
 				0D9F95571C51721A000C5E53 /* ViewController.h */,
 				0D9F95581C51721A000C5E53 /* ViewController.m */,
+				0D9F955A1C51721A000C5E53 /* Main.storyboard */,
 				0D9F95871C5185E6000C5E53 /* Player.h */,
 				0D9F95881C5185E6000C5E53 /* Player.m */,
-				0D9F955A1C51721A000C5E53 /* Main.storyboard */,
 				0D9F95841C51731C000C5E53 /* DieLabel.h */,
 				0D9F95851C51731C000C5E53 /* DieLabel.m */,
 				0D9F955D1C51721A000C5E53 /* Assets.xcassets */,
@@ -513,6 +513,7 @@
 				0D9F957D1C51721A000C5E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D9F957E1C51721A000C5E53 /* Build configuration list for PBXNativeTarget "FarkleTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +522,7 @@
 				0D9F95801C51721A000C5E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D9F95811C51721A000C5E53 /* Build configuration list for PBXNativeTarget "FarkleUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +531,7 @@
 				0D9F95831C51721A000C5E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

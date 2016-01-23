@@ -18,10 +18,10 @@
 @property (weak, nonatomic) IBOutlet DieLabel *dieLabelFive;
 @property (weak, nonatomic) IBOutlet DieLabel *dieLabelSix;
 
+@property NSMutableArray *originalDieArray;
+@property NSMutableArray *inPlayDie;
+@property NSMutableArray *outOfPlayDie;
 
-
-@property NSMutableArray *numberOfDie;
-//@property NSMutableArray *dice;
 
 @end
 
@@ -30,39 +30,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     
-    self.numberOfDie = [[NSMutableArray alloc]initWithObjects:self.dieLabelOne, self.dieLabelTwo, self.dieLabelThree, self.dieLabelFour, self.dieLabelFive, self.dieLabelSix, nil];
+    self.originalDieArray = [[NSMutableArray alloc]initWithObjects:self.dieLabelOne, self.dieLabelTwo, self.dieLabelThree, self.dieLabelFour, self.dieLabelFive, self.dieLabelSix, nil];
     
+    self.inPlayDie = [NSMutableArray new];
+    self.outOfPlayDie = [NSMutableArray new];
 }
 
 
--(void)dieLabel:(id)label tappedDie:(UITapGestureRecognizer *)gestureRecoginzer
-{
-
-    self.dieLabelSix.backgroundColor = [UIColor greenColor];
-    [self.numberOfDie removeObjectAtIndex:5];
-//    self.dieLabelSix.userInteractionEnabled = NO;
-    
-    
+-(void)dieLabel:(UILabel *)dieLabel {
+        dieLabel.backgroundColor = [UIColor greenColor];
+        [self.originalDieArray removeObjectAtIndex:dieLabel.tag - 1];
+        [self.inPlayDie addObjectsFromArray:self.originalDieArray];
+        NSLog(@"%ld",(long)dieLabel.tag);
+        NSLog(@"original array %@", self.originalDieArray);
+        NSLog(@"in play array %@", self.inPlayDie);
+        NSLog(@"new original %@", self.originalDieArray);
 }
 
 
 
 - (IBAction)onRolleDiceTapped:(UIButton *)sender
 {
-    for (DieLabel *die in self.numberOfDie)
+    for (DieLabel *die in self.originalDieArray)
     {
         [die rollDie];
         die.delegate = self;
         
     }
-    NSLog(@"1 is %@", self.dieLabelOne.text);
-    NSLog(@"2 is %@", self.dieLabelTwo.text);
-    NSLog(@"3 is %@", self.dieLabelThree.text);
-    NSLog(@"4 is %@", self.dieLabelFour.text);
-    NSLog(@"5 is %@", self.dieLabelFive.text);
-    NSLog(@"6 is %@", self.dieLabelSix.text);
+//    NSLog(@"1 is %@", self.dieLabelOne.text);
+//    NSLog(@"2 is %@", self.dieLabelTwo.text);
+//    NSLog(@"3 is %@", self.dieLabelThree.text);
+//    NSLog(@"4 is %@", self.dieLabelFour.text);
+//    NSLog(@"5 is %@", self.dieLabelFive.text);
+//    NSLog(@"6 is %@", self.dieLabelSix.text);
     
 }
 
