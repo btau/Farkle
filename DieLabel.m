@@ -39,16 +39,14 @@
 
 -(void)tapHandler:(UITapGestureRecognizer *)gestureRecognizer
 {
-    
     [self.delegate dieLabel:self];
-    
 }
 
 
 
 -(void)rollDie
 {
-    int randomNumber = (rand() % 6) + 1;
+    int randomNumber = arc4random_uniform(6) + 1;
     self.text = [NSString stringWithFormat:@"%i", randomNumber];
 }
 

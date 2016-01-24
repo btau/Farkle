@@ -22,7 +22,6 @@
 @property NSMutableArray *inPlayDie;
 @property NSMutableArray *outOfPlayDie;
 
-
 @end
 
 @implementation ViewController
@@ -33,25 +32,22 @@
     
     self.originalDieArray = [[NSMutableArray alloc]initWithObjects:self.dieLabelOne, self.dieLabelTwo, self.dieLabelThree, self.dieLabelFour, self.dieLabelFive, self.dieLabelSix, nil];
     
-    self.inPlayDie = [NSMutableArray new];
     self.outOfPlayDie = [NSMutableArray new];
 }
 
 
 -(void)dieLabel:(UILabel *)dieLabel {
         dieLabel.backgroundColor = [UIColor greenColor];
-        [self.originalDieArray removeObjectAtIndex:dieLabel.tag - 1];
-        [self.inPlayDie addObjectsFromArray:self.originalDieArray];
+//        [self.originalDieArray removeObjectAtIndex:dieLabel.tag - 1];
+    [self.originalDieArray removeObject:dieLabel];
         NSLog(@"%ld",(long)dieLabel.tag);
         NSLog(@"original array %@", self.originalDieArray);
-        NSLog(@"in play array %@", self.inPlayDie);
         NSLog(@"new original %@", self.originalDieArray);
 }
 
 
 
-- (IBAction)onRolleDiceTapped:(UIButton *)sender
-{
+- (IBAction)onRolleDiceTapped:(UIButton *)sender {
     for (DieLabel *die in self.originalDieArray)
     {
         [die rollDie];

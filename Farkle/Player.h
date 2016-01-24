@@ -12,7 +12,9 @@
 
 @property NSString *playerName;
 @property NSInteger totalScore;
+@property NSMutableArray *totalScoreArray;
 @property NSInteger turnScore;
+@property NSMutableArray *totalTurnScoreArray;
 
 -(instancetype)initWithName:(NSString *)playerName andTotalScore:(NSInteger)totalScore andWithTurnScore:(NSInteger)turnScore;
 
