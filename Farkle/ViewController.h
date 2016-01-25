@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Player.h"
+
+@protocol ViewControllerDelegate <NSObject>
+
+- (void)bankScoreButtonTapped:(UIButton *)bankButton;
+
+@end
 
 @interface ViewController : UIViewController
 
+@property Player *player;
+
+@property (nonatomic, assign) id<ViewControllerDelegate> delegate;
 
 @end
 

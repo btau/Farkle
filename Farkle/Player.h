@@ -11,11 +11,10 @@
 @interface Player : NSObject
 
 @property NSString *playerName;
-@property NSInteger totalScore;
-@property NSMutableArray *totalScoreArray;
-@property NSInteger turnScore;
-@property NSMutableArray *totalTurnScoreArray;
+@property NSInteger playerTotalScore;
+@property NSInteger playerTurnScore;
+@property NSInteger playerTurn;
 
--(instancetype)initWithName:(NSString *)playerName andTotalScore:(NSInteger)totalScore andWithTurnScore:(NSInteger)turnScore;
+-(instancetype)initWithName:(NSString *)playerName andPlayerTotalScore:(NSInteger)playerTotalScore andWithPlayerTurnScore:(NSInteger)playerTurnScore andWithPlayerTurn:(NSInteger)playerTurn;
 
 @end
